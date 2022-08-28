@@ -3,10 +3,10 @@ import { Col } from "antd";
 import Searcher from "./components/Searcher";
 import PokemonList from "./components/PokemonList";
 import { getPokemons } from "./api";
-import { setPokemons } from "./actions";
 import Logo from "./statics/logo.svg";
 import "./App.css";
 import { useDispatch, useSelector } from "react-redux";
+import { getPokemonWithDetails } from "./actions";
 
 function App() {
   const pokemons = useSelector((state) => state.pokemons);
@@ -15,7 +15,7 @@ function App() {
   useEffect(() => {
     const fetchPokemon = async () => {
       const pokemonsRes = await getPokemons();
-      dispatch(setPokemons(pokemonsRes));
+      dispatch(getPokemonWithDetails(pokemonsRes));
     };
     fetchPokemon();
   }, []);
