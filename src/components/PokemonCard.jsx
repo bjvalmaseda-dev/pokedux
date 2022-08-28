@@ -3,7 +3,7 @@ import { Card } from "antd";
 import Meta from "antd/lib/card/Meta";
 import StarButton from "../components/StartButton";
 import { useDispatch } from "react-redux";
-import { setFavorite } from "../actions/index";
+import { setFavorite } from "../slices/dataSlice";
 
 const PokemonCard = ({ name, image, types, id, favorite }) => {
   const typeString = types.map((item) => item.type.name).join(", ");
