@@ -8,7 +8,7 @@ export const uiSlice = createSlice({
   name: "ui",
   initialState,
   reducers: {
-    setLoading: (state, action) => {
+    setLoading: (state = initialState, action) => {
       state.loading = action.payload;
     },
   },
