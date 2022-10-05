@@ -37,7 +37,7 @@
     <a href="https://github.com/bjvalmaseda-dev/pokedux"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://pokedux.bjvalmaseda.xyz">View Demo</a>
+    <a href="https://pokedux.bjvalmaseda.com">View Demo</a>
     ·
     <a href="https://github.com/bjvalmaseda-dev/pokedux/issues">Report Bug</a>  
   </p>
@@ -74,7 +74,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+![Product Name Screen Shot][product-screenshot]
 
 This project is a store create with React and Redux and consuming the [PokeApi][PokeApi-url]. With this app you can find all the Pokemon and make a search by name. 
 
